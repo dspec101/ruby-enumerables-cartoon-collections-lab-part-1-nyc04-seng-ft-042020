@@ -8,12 +8,14 @@ array.each  do |character|
 end
 end
 
+require 'pry'
 def list_dwarves(array)
   # Use `each_with_index` to enumerate over the provided array
   #
   # Print a numbered list of each element
   
   array.each_with_index do |character, index|
+     binding.pry
     puts "#{index + 1}. #{character}"
   end
 end
